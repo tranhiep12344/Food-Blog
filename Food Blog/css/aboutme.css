@@ -1,0 +1,103 @@
+#logo{
+    height: 50px;
+    width: 50px
+
+}
+.navbar{
+    background-color:#f19066 !important;
+}
+.nav-item {
+    font-family:cursive;
+    font-size: 20px;
+}
+
+/* *{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "montserrat";
+} */
+body{
+    background: #f3a683;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "montserrat";
+
+}
+.middle{
+    position: absolute;
+    top:35%;
+    left: 30%;
+    transform: translate(-30%,-30%);
+}
+.card{
+    cursor: pointer;
+    width: 390px;
+    height: 500px;
+    top: 150px;
+}
+.front ,.back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transfrom .6s linear;
+}
+.front img{
+    height: 100%;
+}
+.front{
+    transform: perspective(600px) rotateY(0deg);
+}
+.back{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+    color: #0984e3;
+    text-align: center;
+    width: 100%;
+}
+.sm{
+    margin: 20px 0;
+}
+.sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #0984e3;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+.sm a:hover{
+    background: #0984e3;
+    color: white;
+}
+.card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+.cont h2{
+    text-align: center!important;
+    width: 50px;
+    height: 50px;
+    color: red;
+    font-size: 60px;
+    font-family: cursive;
+}
+.cont p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20%;
+}
+.cont p2{
+    font-size: 35px;
+
+}

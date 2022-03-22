@@ -1,0 +1,82 @@
+#logo{
+    height: 50px;
+    width: 50px;
+   
+}
+.navbar{
+    background-color:#f19066 !important;
+}
+.nav-item {
+    font-family:cursive;
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background:#e66767;
+    font-family: sans-serif;
+}
+.container{
+    width: 1280px;
+    margin: 70px auto 0; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background: #e77f67;
+    margin: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgbox{
+    position: relative;
+}
+.container .box .imgbox img{
+    max-width: 100%;
+    transition: transfrom 2s;
+}
+.container .box:hover .imgbox img{
+    transform: scale(1.2);
+}
+.container .box .word{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transfrom .10s;
+}
+.container .box:hover .word{
+    transform: scaleY(1);
+}
+.container .box .word .type{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .word .type h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #e15f41;
+}
+.container .box .word .type p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+.nd{
+    text-align: center;
+    font-family: 'Times New Roman';
+    color:#111;
+    text-shadow: 5px 5px 5px rgba(170, 13, 13, 0.349);
+    font-size: 45px;
+}
